@@ -23,7 +23,7 @@ on early-boot
     exec_start oplus-sh
 
     # Disable serial console notification
-    setprop init.svc.console stopped
+    stop console
 
     # SSR
     write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
