@@ -31,10 +31,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-TARGET_FLATTEN_APEX := false
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
