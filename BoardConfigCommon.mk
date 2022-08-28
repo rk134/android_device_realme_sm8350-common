@@ -78,6 +78,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
+ifeq ($(TARGET_NFC_CHIPSET),snxxx)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest_snxxx.xml
+endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_oplus
