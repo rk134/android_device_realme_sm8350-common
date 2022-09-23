@@ -241,9 +241,6 @@ on post-fs-data
     # Create /data/vendor/tzstorage directory for SFS listener
     mkdir /data/vendor/tzstorage 0770 system system
 
-    # Create directory for apps access via QTEEConnector
-    mkdir /data/vendor/qtee 0770 system system
-
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
@@ -382,9 +379,6 @@ on post-fs-data
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
-
-    #Create dir for TUI
-    mkdir /data/vendor/tui 0700 system drmrpc
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
