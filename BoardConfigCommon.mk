@@ -70,7 +70,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -164,9 +164,13 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOOT_SECURITY_PATCH := 2022-11-05
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
-# SEPolicy
+# SEPolicy - vndr-legacy-um
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
+
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/realme/sm8350-common/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/realme/sm8350-common/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/realme/sm8350-common/sepolicy/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
