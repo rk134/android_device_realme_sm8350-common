@@ -174,7 +174,6 @@ vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # CVP firmware
-vendor/firmware/evass.b00
 vendor/firmware/evass.b01
 vendor/firmware/evass.b02
 vendor/firmware/evass.b03
@@ -328,10 +327,6 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/seccomp_policy/gnss@2.0-base.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/apdr.conf
@@ -391,7 +386,6 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
 my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -876,11 +870,6 @@ vendor/etc/sensors/config/kodiak_qrd_ak991x_1.json
 vendor/etc/sensors/config/kodiak_tmd3702_0.json
 vendor/etc/sensors/config/lahaina_default_sensors.json
 vendor/etc/sensors/config/lahaina_dynamic_sensors.json
-vendor/etc/sensors/config/lahaina_hdk_ak991x_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_1.json
-vendor/etc/sensors/config/lahaina_hdk_sx932x_0.json
-vendor/etc/sensors/config/lahaina_hdk_tmd2725_0.json
 vendor/etc/sensors/config/lahaina_hhg_ak991x_0.json
 vendor/etc/sensors/config/lahaina_hhg_lsm6dst_0.json
 vendor/etc/sensors/config/lahaina_hhg_sx9302x_0.json
