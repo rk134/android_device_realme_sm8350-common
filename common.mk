@@ -313,7 +313,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-arrow \
+    $(LOCAL_PATH)/overlay-statix \
     $(LOCAL_PATH)/overlay-qssi
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
