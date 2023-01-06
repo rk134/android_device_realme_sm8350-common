@@ -1,2 +1,0 @@
-get_prop(vendor_rmt_storage, default_prop)
-get_prop(rild, default_prop)

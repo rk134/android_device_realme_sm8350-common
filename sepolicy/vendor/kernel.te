@@ -1,4 +1,2 @@
 allow kernel vendor_file:file r_file_perms;
 allow kernel self:capability { sys_admin };
-allow kernel mnt_vendor_file:dir { search };
-allow kernel proc:file { read };
