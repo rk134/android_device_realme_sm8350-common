@@ -327,10 +327,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-statix \
-    $(LOCAL_PATH)/overlay-qssi
+    $(LOCAL_PATH)/overlay-statix
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
@@ -338,6 +336,16 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     WifiResTarget
+
+# Overlays - QSSI
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    OPlusWifiResCommon \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
