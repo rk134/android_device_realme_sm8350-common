@@ -108,6 +108,7 @@ PRODUCT_COPY_FILES += \
 TARGET_USES_BLUR := true
 
 # Board
+PRODUCT_BOARD_PLATFORM := lahaina
 PRODUCT_USES_QCOM_HARDWARE := true
 
 # Boot control
