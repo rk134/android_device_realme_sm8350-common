@@ -105,6 +105,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Board
+PRODUCT_BOARD_PLATFORM := lahaina
 PRODUCT_USES_QCOM_HARDWARE := true
 
 # Boot control
