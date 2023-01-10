@@ -42,6 +42,11 @@ void vendor_load_properties() {
                 OverrideProperty("ro.product.product.model", "RMX3363");
             }
             break;
+        case 4: // IND
+            if (device == "RMX3363") {
+                OverrideProperty("ro.product.product.model", "RMX3360");
+            }
+            break;
         default:
             LOG(ERROR) << "Unexpected RF version: " << rf_version;
     }
