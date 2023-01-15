@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from Realme GT Master Edition (RMX3363_11_C.12).
+## from Realme GT Master Edition (RMX3360_11_F.02).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -42,14 +42,14 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
-# Bluetooth - from RMX3312_11_C.05
+# Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 
-# Bluetooth (A2DP) - from RMX3312_11_C.05
+# Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
@@ -208,7 +208,6 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
@@ -405,7 +404,7 @@ system_ext/lib64/libimsmedia_jni.so|9f192af40439abb04d5d5f0f3de5b772c9381114
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
 system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
 
-# IMS - from RMX3312_11_C.05 (T)
+# IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
 vendor/etc/init/ims_rtp_daemon.rc
@@ -706,7 +705,7 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 
-# RIL - from RMX3312_11_C.05 (T)
+# RIL
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
