@@ -82,9 +82,6 @@ ifeq ($(TARGET_NFC_CHIPSET),snxxx)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest_snxxx.xml
 endif
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_oplus
-
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_NO_KERNEL := false
