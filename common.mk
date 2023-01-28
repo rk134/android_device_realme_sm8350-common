@@ -106,7 +106,6 @@ PRODUCT_COPY_FILES += \
 
 # Board
 PRODUCT_BOARD_PLATFORM := lahaina
-PRODUCT_USES_QCOM_HARDWARE := true
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -237,6 +236,8 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
+    init.oplus.hw.rc \
+    init.oplus.hw.rc.recovery \
     init.oplus.rc \
     init.oplus.sh \
     init.qcom.early_boot.sh \
@@ -247,15 +248,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oplus.rc \
     ueventd.qcom.rc
-
-# Kernel
-TARGET_KERNEL_DIR ?= device/realme/sm8350-kernel
-LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
-
-PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
-
-# Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS += device/realme/sm8350-kernel/kernel-headers
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -326,7 +318,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-statix
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
