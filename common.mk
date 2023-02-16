@@ -340,12 +340,7 @@ PRODUCT_PACKAGES += \
     WifiResTarget
 
 # Overlays - QSSI
-PRODUCT_PACKAGES += \
-    FrameworksResCommon \
-    OPlusWifiResCommon \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -404,7 +399,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oplus
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
